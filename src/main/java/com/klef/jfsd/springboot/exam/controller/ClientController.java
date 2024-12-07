@@ -31,8 +31,8 @@ public class ClientController
 		return service.displayAllUsers();
 	}
 	
-	@GetMapping("demo2/{id}")
-	public Object demo2(@PathVariable("id")int uid)
+	@GetMapping("demo2")
+	public Object demo2(@RequestParam("id")int uid)
 	{
 		return service.displayUserById(uid);
 	}
